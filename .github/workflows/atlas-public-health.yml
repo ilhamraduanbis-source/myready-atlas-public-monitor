@@ -1,0 +1,20 @@
+name: Atlas public health
+on:
+  schedule:
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: atlas-public-health
+  cancel-in-progress: false
+jobs:
+  public-health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Check only public Atlas demo
+        run: node monitor.mjs
