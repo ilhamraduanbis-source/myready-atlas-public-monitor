@@ -1,0 +1,12 @@
+{
+  "origin": "https://myready-atlas-lab.ilhamraduan-bis.chatgpt.site",
+  "manifest_sha256": "3c4ba235a96daaf8ca22cfd11590e2a8fd2c0c5495280b64334332cab60128cd",
+  "sample_sha256": "72e2b2c80438675048ad65f55b84ba989f0d44192a0570ba965ba2a185593ec7",
+  "demo_release": "myready.atlas.public_demo/0.1.0",
+  "semantic_sha256": "f3e4c6e5300f134940128cbf5f701c8f537912ec08074c88710d0b166f9c8162",
+  "expected_counts": {
+    "D10": 20,
+    "D12": 10
+  },
+  "budget": "public repository, standard ubuntu-latest runner only; no artifact upload, paid runner, secrets or checkout token retained"
+}
